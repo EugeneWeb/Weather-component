@@ -1,0 +1,128 @@
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+img, video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.weather {
+    display: block;
+    max-width: 500px;
+    padding: 40px;
+    margin: 0 auto;
+    border-radius: 10px;
+
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 16px;
+    color: #fff;
+
+    background-color: rgb(150, 187, 199);
+}
+
+.weather__select-wrap {
+    margin-bottom: 15px;
+}
+.weather__select {
+    padding: 3px 6px;
+    border: 0;
+    border-radius: 5px;
+}
+.weather__select:focus {
+    outline: none;
+}
+
+.weather__city {
+    margin-bottom: 3px;
+}
+
+.weather__now {
+    margin-bottom: 20px;
+
+    font-size: 13px;
+
+    color: rgba(255, 255, 255, .7);
+}
+
+.weather__temp {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.weather__temp-value {
+    font-size: 60px;
+}
+.weather__temp-icon {
+    width: 70px;
+    height: auto;
+    object-fit: cover;
+    background-position: center center;
+}
+.weather__temp-desc {
+    font-weight: bold;
+}
+
+.weather__desc-clouds {
+    margin-bottom: 10px;
+}
+
+.weather__feel-like span {
+    color: rgba(255, 255, 255, .7);
+}
+
+.weather__info {
+    position: relative;
+
+    display: flex;
+    gap: 60px;
+    margin-left: 40px;
+}
+
+.weather__info-wind::before {
+    position: absolute;
+    left: -40px;
+    top: -10px;
+
+    content: '';
+    width: 40px;
+    height: 40px;
+
+    
+
+    background-image: url('./Icons/wind_icon.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.weather__info-humidity::before  {
+    position: absolute;
+    left: 57px;
+    top: -13px;
+
+    content: '';
+    width: 45px;
+    height: 45px;
+
+    background-image: url('./Icons/humidity_icon.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.weather__info-pressure::before  {
+    position: absolute;
+    left: 149px;
+    top: -6px;
+
+    content: '';
+    width: 30px;
+    height: 30px;
+
+    background-image: url('./Icons/pressure_icon.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
